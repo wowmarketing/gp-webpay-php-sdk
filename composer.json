@@ -4,11 +4,11 @@
   "type": "library",
   "keywords": ["webpay", "php"],
   "license": "MIT",
-  "homepage": "https://github.com/newPOPE/webpay-php",
+  "homepage": "https://github.com/wowmarketing/gp-webpay-php-sdk",
   "authors": [
     {
-      "name": "Adam Štipák",
-      "homepage": "http://newpope.org"
+      "name": "WOWMarketing",
+      "homepage": "http://WOWMarketing.cz"
     }
   ],
   "autoload": {
