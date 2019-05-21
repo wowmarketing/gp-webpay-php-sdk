@@ -1,6 +1,6 @@
 <?php
 
-namespace AdamStipak\Webpay;
+namespace WOWMarketing\Webpay;
 
 class Api {
 
@@ -36,7 +36,7 @@ class Api {
   }
 
   /**
-   * @param \AdamStipak\Webpay\PaymentRequest $request
+   * @param \WOWMarketing\Webpay\PaymentRequest $request
    * @return array
    */
   public function createPaymentParam (PaymentRequest $request): array {

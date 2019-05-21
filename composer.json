@@ -1,5 +1,5 @@
 {
-  "name": "adamstipak/webpay-php",
+  "name": "wowmarketing/webpay-php",
   "description": "GP Webpay API Wrapper",
   "type": "library",
   "keywords": ["webpay", "php"],
@@ -12,7 +12,7 @@
     }
   ],
   "autoload": {
-    "psr-0": { "AdamStipak\\Webpay": "src/" }
+    "psr-0": { "WOWMarketing\\Webpay": "src/" }
   },
   "require": {
     "php": "7.*",

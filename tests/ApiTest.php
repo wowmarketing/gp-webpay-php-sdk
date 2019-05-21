@@ -1,13 +1,13 @@
 <?php
 
-namespace AdamStipak\Webpay;
+namespace WOWMarketing\Webpay;
 
 use PHPUnit\Framework\TestCase;
 
 class ApiTest extends TestCase {
 
   public function testVerifyPaymentResponse () {
-    $response = $this->getMockBuilder('AdamStipak\Webpay\PaymentResponse')
+    $response = $this->getMockBuilder('WOWMarketing\Webpay\PaymentResponse')
       ->setConstructorArgs(
         [
           'operation',
@@ -31,7 +31,7 @@ class ApiTest extends TestCase {
       ->method('hasError')
       ->willReturn(false);
 
-    $signer = $this->getMockBuilder('AdamStipak\\Webpay\\Signer')
+    $signer = $this->getMockBuilder('WOWMarketing\\Webpay\\Signer')
       ->disableOriginalConstructor()
       ->setMethods(
         [
@@ -49,7 +49,7 @@ class ApiTest extends TestCase {
   }
 
   /**
-   * @expectedException \AdamStipak\Webpay\PaymentResponseException
+   * @expectedException \WOWMarketing\Webpay\PaymentResponseException
    */
   public function testPaymentHasErrorInVerifyPaymentResponse () {
     $merchantNumber = 123456789;

@@ -1,13 +1,13 @@
 <?php
 
-namespace AdamStipak\Webpay;
+namespace WOWMarketing\Webpay;
 
 use PHPUnit\Framework\TestCase;
 
 class SignerTest extends TestCase {
 
   /**
-   * @expectedException \AdamStipak\Webpay\SignerException
+   * @expectedException \WOWMarketing\Webpay\SignerException
    */
   public function testConstructorWithInvalidPrivateKey () {
     $signer = new Signer(
@@ -18,7 +18,7 @@ class SignerTest extends TestCase {
   }
 
   /**
-   * @expectedException \AdamStipak\Webpay\SignerException
+   * @expectedException \WOWMarketing\Webpay\SignerException
    */
   public function testConstructorWithInvalidPublicKey () {
     $signer = new Signer(
@@ -80,7 +80,7 @@ class SignerTest extends TestCase {
   }
 
   /**
-   * @expectedException \AdamStipak\Webpay\SignerException
+   * @expectedException \WOWMarketing\Webpay\SignerException
    */
   public function testVerifyWithInvalidDigest () {
     $params = [

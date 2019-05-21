@@ -8,22 +8,22 @@ Full featured PHP SDK for [GP Webpay payments](http://www.gpwebpay.cz).
 The best way to install GP Webpay PHP SDK is using  [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require adamstipak/webpay-php dev-master
+$ composer require wowmarketing/webpay-php dev-master
 ```
 
 ## Setup
 
 ```php
-$signer = new \AdamStipak\Webpay\Signer(
+$signer = new \WOWMarketing\Webpay\Signer(
   $privateKeyFilepath,    // Path of private key.
   $privateKeyPassword,    // Password for private key.
   $publicKeyFilepath      // Path of public key.
 );
     
-$api = new \AdamStipak\Webpay\Api(
+$api = new \WOWMarketing\Webpay\Api(
   $merchantNumber,    // Merchant number.
   $webpayUrl,         // URL of webpay.
-  $signer             // instance of \AdamStipak\Webpay\Signer.
+  $signer             // instance of \WOWMarketing\Webpay\Signer.
 );
 
 ```
@@ -33,11 +33,11 @@ $api = new \AdamStipak\Webpay\Api(
 ### Create payment url
 
  ```php
- use \AdamStipak\Webpay\PaymentRequest;
+ use \WOWMarketing\Webpay\PaymentRequest;
  
  $request = new PaymentRequest(...);
  
- $url = $api->createPaymentRequestUrl($request); // $api instance of \AdamStipak\Webpay\Api
+ $url = $api->createPaymentRequestUrl($request); // $api instance of \WOWMarketing\Webpay\Api
  
  // use $url as you want. In most cases for redirecting to GP Webpay.
  
@@ -46,8 +46,8 @@ $api = new \AdamStipak\Webpay\Api(
 ### Verify payment response
  
 ```php
-use \AdamStipak\Webpay\PaymentResponse;
-use \AdamStipak\Webpay\Exception;
+use \WOWMarketing\Webpay\PaymentResponse;
+use \WOWMarketing\Webpay\Exception;
  
 $response = new PaymentResponse(...); // fill response with response parameters (from request).
  

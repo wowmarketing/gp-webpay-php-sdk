@@ -1,6 +1,6 @@
 <?php
 
-namespace AdamStipak\Webpay;
+namespace WOWMarketing\Webpay;
 
 use PHPUnit\Framework\TestCase;
 

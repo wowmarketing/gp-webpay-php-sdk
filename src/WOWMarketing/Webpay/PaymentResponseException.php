@@ -1,6 +1,6 @@
 <?php
 
-namespace AdamStipak\Webpay;
+namespace WOWMarketing\Webpay;
 
 class PaymentResponseException extends Exception {
 
